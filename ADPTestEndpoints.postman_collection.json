@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "fa22fd60-7728-4438-8d81-e5deaac31f21",
+		"name": "ADPTestEndpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exchange",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numBills\" : [1,0,0,0,2,0,0]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/exchange",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[100,100,150, 50]"
+				},
+				"url": {
+					"raw": "localhost:8080/reset",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
